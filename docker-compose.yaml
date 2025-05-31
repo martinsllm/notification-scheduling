@@ -20,6 +20,6 @@ services:
     volumes:
       - db:/var/lib/mysql
     ports: 
-      - '3307:$DB_PORT'
+      - '3307:$DB_DOCK_PORT'
 volumes:
   db:
