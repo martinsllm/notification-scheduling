@@ -1,0 +1,21 @@
+{
+  "name": "notification-scheduling",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec ts-node ./src/index.ts",
+    "db:migrate": "sequelize-cli db:migrate",
+    "db:reset": "sequelize-cli db:migrate:undo"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.37.7"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
