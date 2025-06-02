@@ -1,5 +1,5 @@
 import { Notifications } from "../../domain/notification/entity/notification"
-import { CreateNotificationGateway } from "../../domain/notification/gateways/create-notification.gateway"
+import { CreateNotificationGateway } from "../../domain/notification/gateways"
 import { Usecase } from "../usecase"
 
 export type CreateNotificationInputDto = {
