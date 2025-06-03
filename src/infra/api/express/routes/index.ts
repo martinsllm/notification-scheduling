@@ -1,9 +1,11 @@
-import { createNotification } from "../../../../usecases"
-import { CreateNotificationRoute } from "./notification"
+import { createNotification, getNotification } from "../../../../usecases"
+import { CreateNotificationRoute, GetNotificationRoute } from "./notification"
 
 const createNotificationRoute =
     CreateNotificationRoute.create(createNotification)
 
-const routes = [createNotificationRoute]
+const getNotificationRoute = GetNotificationRoute.create(getNotification)
+
+const routes = [createNotificationRoute, getNotificationRoute]
 
 export default routes

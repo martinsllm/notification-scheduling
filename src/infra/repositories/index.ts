@@ -1,5 +1,9 @@
-import { CreateNotificationRepository } from "./notification"
+import {
+    CreateNotificationRepository,
+    GetNotificationRepository,
+} from "./notification"
 
 const createNotificationRepository = CreateNotificationRepository.create()
+const getNotificationRepository = GetNotificationRepository.create()
 
-export { createNotificationRepository }
+export { createNotificationRepository, getNotificationRepository }
