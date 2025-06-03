@@ -1,9 +1,11 @@
 import {
     createNotificationRepository,
+    deleteNotificationRepository,
     getNotificationRepository,
 } from "../infra/repositories"
 import {
     CreateNotificationUsecase,
+    DeleteNotificationUsecase,
     GetNotificationUsecase,
 } from "./notification"
 
@@ -13,4 +15,9 @@ const createNotification = CreateNotificationUsecase.create(
 
 const getNotification = GetNotificationUsecase.create(getNotificationRepository)
 
-export { createNotification, getNotification }
+const deleteNotification = DeleteNotificationUsecase.create(
+    getNotificationRepository,
+    deleteNotificationRepository
+)
+
+export { createNotification, getNotification, deleteNotification }
